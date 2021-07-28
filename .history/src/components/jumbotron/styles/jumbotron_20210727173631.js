@@ -33,7 +33,7 @@ export const Pane = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 1.3rem;
+  font-size: 50px;
   font-weight: bold;
   line-height: 8px;
 

@@ -36,10 +36,10 @@ export const Title = styled.h1`
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 8px;
+  paddiing-bottom: 10px
 
   @media (max-width: 600px) {
-    font-size: .7rem;
-    paddiing-top: .2rem;
+    font-size: 0.9rem;
   }
 `;
 
