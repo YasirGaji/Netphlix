@@ -24,7 +24,7 @@ export const Title = styled.h1`
   margin-bottom: 8px;
   color: white;
   text-align: center;
-
+  
   @media (max-width: 600px) {
     font-size: 35px;
   }
@@ -81,7 +81,6 @@ export const Body = styled.div`
   white-space: pre-wrap;
   user-select: none;
   overflow: hidden;
-  padding: 0.8em 2.2em 0.8em 1.2em;
 
   &.closed {
     max-height: 0;
