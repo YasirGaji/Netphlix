@@ -56,12 +56,11 @@ export const SubTitle = styled.h2`
 export const Image = styled.img`
   max-width: 100%;
   height: auto;
-  align-Item: center;
 `;
 
 export const Container = styled.div`
   @media (max-width: 1000px) {
-    ${Item}:last-of-type h2 {
+    ${item}:last-of-type h2 {
       margin-bottom: 50px;
     }
   }
