@@ -1,6 +1,6 @@
 import React from 'react'
 import faqsData from "../fixtures/faqs.json"
-import { Accordion, OptForm } from '../components'
+import { Accordion } from '../components'
 
 export function FaqsContainer() {
   return (
@@ -16,11 +16,7 @@ export function FaqsContainer() {
       </Accordion.Item>
 
       <OptForm>
-        <OptForm.Input placeholder="Email address" />
-        <OptForm.Button>Try it now</OptForm.Button>
-        <OptForm.Text>
-          Ready to watch? Enter your email to craete or restart your membership.
-        </OptForm.Text>
+        
       </OptForm>
     </Accordion>
   )
