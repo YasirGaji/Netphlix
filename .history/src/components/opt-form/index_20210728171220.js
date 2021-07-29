@@ -31,6 +31,6 @@ OptForm.Text = function OptFormText({ children, ...restProps}) {
 
 OptForm.Break = function OptFormBreak({ children, ...restProps}) {
   return (
-    <Break { ...restProps} />
+    <Break { ...restProps}>{children}</Break>
   )
 }
