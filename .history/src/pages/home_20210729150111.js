@@ -1,5 +1,5 @@
 import React from 'react'
-import { Feature, OptForm } from "../components"
+import { OptForm } from "../containers/header"
 import { FaqsContainer } from '../containers/faqs'
 import { FooterContainer } from '../containers/footer'
 import HeaderContainer from '../containers/header'
@@ -21,10 +21,10 @@ export default function Home() {
           </OptForm>
         </Feature>
       </HeaderContainer>
-
-      <JumbotronContainer />
-      <FaqsContainer />
-      <FooterContainer />
+      
+          <JumbotronContainer />
+          <FaqsContainer />
+          <FooterContainer />
       </>
     </div>
   )
