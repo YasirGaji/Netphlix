@@ -5,7 +5,6 @@ import './index.css';
 import 'normalize.css';
 import { GlobalStyles } from "./global-styles"
 import { firebase } from "./lib/firebase.prod"
-import { FirebaseContext } from "./context/firebase"
 
 render(
   <>
