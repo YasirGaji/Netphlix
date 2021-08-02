@@ -12,12 +12,6 @@ export default function Signin() {
   const [password, setPassword] = useState();
   const [error, setError] = useState(' '); 
 
-  const isInvalid = password === ' ' || emailAddress == ' ';
-  const handleSignIn = (event) => {
-    event.preventDefault();
-    
-  }
-
   return (
     <>
       <HeaderContainer>
@@ -25,12 +19,10 @@ export default function Signin() {
           <Form.Title>Sign In</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
 
-          <Form.Base onSubmit={handleSignIn} method="POST">
+          <Form.Base onSubmit={handleSignI} method="POST">
             <Form.Input placeholder="Email address" value={emailAddress} onChangge={({ target }) => setEmailAddress(target.value)} />
 
             <Form.Input type="password" autoComplete="off"  placeholder="Password" value={password} onChangge={({ target }) => setPassword(target.value)} />
-
-            <Form.Submit disabled={isInvalid} type="submit">Sign In</Form.Submit>
           </Form.Base>
         </Form>
       </HeaderContainer>
