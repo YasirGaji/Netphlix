@@ -10,9 +10,9 @@ import { FirebaseContext } from '../context/firebase'
 
    useEffect(() => {
      setTimeout(() => {
-       setLoading(false);
-     }, 3000);
-   }, [profile.displayName]);
+       
+     })
+   })
 
    return (
     <SelectProfileContainer user={user} setProfile={setProfile} /> 

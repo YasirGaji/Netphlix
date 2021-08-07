@@ -9,10 +9,8 @@ import { FirebaseContext } from '../context/firebase'
    const user = firebase.auth().currentUser ||  {};
 
    useEffect(() => {
-     setTimeout(() => {
-       setLoading(false);
-     }, 3000);
-   }, [profile.displayName]);
+     set
+   })
 
    return (
     <SelectProfileContainer user={user} setProfile={setProfile} /> 

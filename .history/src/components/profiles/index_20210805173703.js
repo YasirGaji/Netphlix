@@ -7,7 +7,7 @@ export default function Profiles({ children, ...restProps }) {
 
 Profiles.Title = function ProfilesTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
-};
+}
 
 Profiles.List = function ProfilesList({ children, ...restProps }) {
   return <List {...restProps}>{children}</List>;
