@@ -17,10 +17,10 @@ import { Header, Loading } from '../components'
 
    return profile.displayName ? ( 
       <>
-      {loading ? (
-      <Loading src={user.photoURL} />
-      ) : (<Loading.ReleaseBody />
-      )} 
+      loading ? (
+       { <Loading src={user.photoURL} />
+      ) : (<Loading.ReleaseBody />)}
+      
       <Header src="joker1">
         <h1>yo</h1>
       </Header>

@@ -19,8 +19,8 @@ import { Header, Loading } from '../components'
       <>
       {loading ? (
       <Loading src={user.photoURL} />
-      ) : (<Loading.ReleaseBody />
-      )} 
+      ) : (<Loading.ReleaseBody />)}
+       
       <Header src="joker1">
         <h1>yo</h1>
       </Header>

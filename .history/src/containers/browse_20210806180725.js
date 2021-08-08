@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+ import React, { useState, useContext, useEffect } from 'react'
 import SelectProfileContainer from './profiles'
 import { FirebaseContext } from '../context/firebase'
 import { Header, Loading } from '../components'
@@ -17,15 +17,10 @@ import { Header, Loading } from '../components'
 
    return profile.displayName ? ( 
       <>
-      {loading ? (
-      <Loading src={user.photoURL} />
-      ) : (<Loading.ReleaseBody />
-      )} 
-      <Header src="joker1">
-        <h1>yo</h1>
-      </Header>
+      loading ? ( <Loading src={user.photoURL} /> ) : <Loading.ReleaseBody />
+      <Header src="joker1"><h1>yo</h1></Header>
       </>
-    ) :  (
+    ) :  
     <SelectProfileContainer user={user} setProfile={setProfile} /> 
    )
  }
