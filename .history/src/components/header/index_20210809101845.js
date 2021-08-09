@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom';
 
 import { 
@@ -14,11 +14,7 @@ import {
   Picture,
   FeatureCallOut,
   Dropdown,
-  Profile,
-  SearchIcon,
-  SearchInput,
-  Search,
-  PlayButton
+  Profile
 } from './styles/header'
 
 export default function Header({ bg  = true, children , ...resProps }) {
@@ -34,35 +30,12 @@ Header.Picture = function HeaderPicture({ src, ...restProps}) {
   return <Picture { ...restProps} src={`/images/users/${src}.png`} />
 }
 
-Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps }) {
-  const [searchActive, setSearchActive] = useState(false);
-
-  return (
-    <Search { ...restProps }>
-      <SearchIcon onClick={() => setSearchActive((searchActive) => !searchActive)}>
-        <img src="/images/icons/search.png"
-         alt="Search" />
-      </SearchIcon>
-      <SearchInput 
-        value={searchTerm} 
-        onChange={({ target }) => setSearchTerm(target.value)}
-        placeHolder="Search"
-        active={searchActive}
-      />
-    </Search>
-  )
-}
-
 Header.Text = function HeaderText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
 };
 
 Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
   return <Link {...restProps}>{children}</Link>;
-};
-
-Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
-  return <PlayButton {...restProps}>{children}</PlayButton>;
 };
 
 Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }) {
