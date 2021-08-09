@@ -32,19 +32,19 @@ export default function Card({ children, ...restProps }) {
   );
 }
 
-Card.Group = function CardGroup ({ children, ...restProps }) {
+card.Group = function CardGroup ({ children, ...restProps }) {
   return <Group { ...restProps}>{children} </Group>;
 }
 
-Card.Title = function CardTitle ({ children, ...restProps }) {
+card.Title = function CardTitle ({ children, ...restProps }) {
   return <Title { ...restProps}>{children} </Title>;
 }
 
-Card.SubTitle = function CardSubTitle ({ children, ...restProps }) {
+card.SubTitle = function CardSubTitle ({ children, ...restProps }) {
   return <SubTitle { ...restProps}>{children} </SubTitle>;
 }
 
-Card.Text = function CardText ({ children, ...restProps }) {
+card.Text = function CardText ({ children, ...restProps }) {
   return <Text { ...restProps}>{children} </Text>;
 }
 
