@@ -4,7 +4,7 @@ import { Footer } from '../components'
 export default function FooterContainer() {
   return (
     <Footer>
-      <Footer.Title>Netphlix | Built by <Footer.Link target="_blank" href="https://www.yasirgaji.com">Yasir Gaji</Footer.Link>.</Footer.Title>
+      <Footer.Title>Questions? Contact us.</Footer.Title>
       <Footer.Break />
 
       <Footer.Row>
@@ -37,7 +37,9 @@ export default function FooterContainer() {
           <Footer.Link href="#">Legal Notices</Footer.Link>
         </Footer.Column>
 
+        <Footer.Break />
 
+        <Footer.Text>Netphlix | Built by <Footer.Link target="_blank" href="https://www.yasirgaji.com">Yasir Gaji</Footer.Link>.</Footer.Text>
       </Footer.Row>
     </Footer>
   )
