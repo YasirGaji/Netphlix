@@ -27,4 +27,4 @@ This is a replica of the subscription based streaming platform service "Netflix"
   
   1. Non Yet
 
-## [View Project](https://netphlix.vercel.app/)
+## [View Project](https://netphlix-yasirgaji.vercel.app/)
