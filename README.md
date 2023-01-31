@@ -29,6 +29,8 @@ This is a replica of the subscription based streaming platform service "Netflix"
 
   1. "fatal: not a git repository (or any of the parent directories): .git" - This error was caused by the fact that I had exported a CDPATH environment variable, and one of the sub-directories of a repo happens to be named same as another non-repo-subdir under one of the paths in my CDPATH, and git was trying to find the repo in the non-repo-subdir. To fix this, I had to unset the CDPATH environment variable.
 
+  2. "Error: A <Route> is only ever to be used as the child of <Routes> element" - This error was caused by the fact that I had nested a <Route> element inside another <Route> element. To fix this, I had to remove the nested <Route> element and place it outside the parent <Route> element.
+
 ## Current Error
   
   1. Non Yet
