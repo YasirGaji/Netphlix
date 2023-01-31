@@ -22,6 +22,8 @@ This is a replica of the subscription based streaming platform service "Netflix"
   9. How to reference a constant (a styled component) in styled components
   10. How to use the "as" prop in styled components
   11. How to use "useContext" and "createContext" in React
+  12. How to Create a toggle component
+  13. Trick code to check the state of an element in React using - "<>{JSON.stringify([context name], null, 2)}</>"
 
 ## Errors I Faced
 

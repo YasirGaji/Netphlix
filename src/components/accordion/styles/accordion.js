@@ -43,7 +43,31 @@ export const Item = styled.div`
 `;
 
 export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: normal;
+  background: #303030;
+  padding: 0.8em 1.2em;
+  user-select: none;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
 
+  img {
+    filter: brightness(0) invert(1);
+    width: 24px;
+
+    @media (max-width: 600px) {
+      width: 16px;
+    }
+
+  }   
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 `;
 
 export const Body = styled.div`
