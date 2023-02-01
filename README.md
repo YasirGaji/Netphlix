@@ -25,6 +25,7 @@ This is a replica of the subscription based streaming platform service "Netflix"
   12. How to Create a toggle component
   13. Trick code to check the state of an element in React using - "<>{JSON.stringify([context name], null, 2)}</>"
   14. How to style a reactRouter component using styled components
+  15. How to reneder images for static and dynamic web apps
 
 ## Errors I Faced
 
