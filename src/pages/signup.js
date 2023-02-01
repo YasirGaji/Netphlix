@@ -10,7 +10,7 @@ export default function Signup() {
   const history = useNavigate()
   const { firebase } = useContext(FirebaseContext) 
 
-  const [userName, setFirstName] = useState('')
+  const [userName, setUserName] = useState('')
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -20,6 +20,28 @@ export default function Signup() {
 
   const handleSignup = (event) => {
     event.preventDefault()
+
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(emailAddress, password)
+      .then((result) =>
+        result.user
+          .updateProfile({
+            displayName: userName,
+            photoURL: Math.floor(Math.random() * 5) + 1,
+          })
+          .then(() => {
+            history(ROUTES.BROWSE)
+          }
+        )
+      )
+      .catch((error) => {
+        setUserName('')
+        setEmailAddress('')
+        setPassword('')
+        setError(error.message)
+      }
+    )
   }
 
   return (
@@ -33,7 +55,7 @@ export default function Signup() {
             <Form.Input 
               placeholder="User name"
               value={userName}
-              onChange={({ target }) => setFirstName(target.value)}
+              onChange={({ target }) => setUserName(target.value)}
             />
 
             <Form.Input
