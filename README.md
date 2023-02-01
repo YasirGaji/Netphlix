@@ -39,7 +39,7 @@ This is a replica of the subscription based streaming platform service "Netflix"
 
   3. "export 'firestore' (imported as 'firebase') was not found in 'firebase'" - This error was caused by the fact that I had imported the "firestore" from "firebase/app" instead of "firebase/compat/app". To fix this, I had to import the "firestore" from "firebase/compat/app".
 
-  4. export 'useHistory' (imported as 'useHistory') was not found in 'react-router-dom' - This error was caused by the fact that I had imported the "useHistory" from "react-router-dom" instead of "useNavigate" giving the version of react-router-dom I'm usong . To fix this, I had to import the "useNavigate" from "react-router-dom".
+  4. "export 'useHistory' (imported as 'useHistory') was not found in 'react-router-dom'" - This error was caused by the fact that I had imported the "useHistory" from "react-router-dom" instead of "useNavigate" giving the version of react-router-dom I'm usong . To fix this, I had to import the "useNavigate" from "react-router-dom".
 
 ## Current Error
   
