@@ -28,7 +28,7 @@ This is a replica of the subscription based streaming platform service "Netflix"
   15. How to render images for static and dynamic web apps
   16. How to set up a firebase project for a production build and a development build
   17. How to feed data to firebase
-  18. The trick of keeping initialization files in the context folder 
+  18. The trick of keeping initialization files in the context folder
 
 ## Errors I Faced
 
