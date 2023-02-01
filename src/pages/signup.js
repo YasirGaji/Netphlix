@@ -9,12 +9,14 @@ import { useNavigate } from 'react-router-dom'
 export default function Signup() {
   const history = useNavigate()
   const { firebase } = useContext(FirebaseContext) 
+
+  const [userName, setFirstName] = useState('')
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
 
   // validating form inputs 👇🏼
-  const isInvalid = password === '' || emailAddress === ''
+  const isInvalid = userName === '' || password === '' || emailAddress === ''
 
   const handleSignup = (event) => {
     event.preventDefault()
@@ -28,6 +30,12 @@ export default function Signup() {
           {error && <Form.Error>{error}</Form.Error>}
 
           <Form.Base onSubmit={handleSignup} method="POST">
+            <Form.Input 
+              placeholder="User name"
+              value={userName}
+              onChange={({ target }) => setFirstName(target.value)}
+            />
+
             <Form.Input
               placeholder="Email address"
               value={emailAddress}
@@ -37,7 +45,7 @@ export default function Signup() {
             <Form.Input
               type="password"
               autoComplete="off"
-              placeholder="Password"
+              placeholder="Set Password"
               value={password}
               onChange={({ target }) => setPassword(target.value)}
             />
@@ -48,7 +56,7 @@ export default function Signup() {
           </Form.Base>
 
           <Form.Text>
-            Have an account? <Form.Link to="/signin">Sign in now.</Form.Link>
+            Already have an account? <Form.Link to="/signin">Sign in now.</Form.Link>
           </Form.Text>
 
           <Form.TextSmall>
