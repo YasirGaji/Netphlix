@@ -29,6 +29,7 @@ This is a replica of the subscription based streaming platform service "Netflix"
   16. How to set up a firebase project for a production build and a development build
   17. How to feed data to firebase
   18. The trick of keeping initialization files in the context folder
+  19. How to use hooks in React
 
 ## Errors I Faced
 
@@ -37,6 +38,8 @@ This is a replica of the subscription based streaming platform service "Netflix"
   2. "Error: A "Route" is only ever to be used as the child of "Routes" element" - This error was caused by the fact that I had nested a "Route" element inside another "Route" element. To fix this, I had to remove the nested "Route" element and place it outside the parent "Route" element.
 
   3. "export 'firestore' (imported as 'firebase') was not found in 'firebase'" - This error was caused by the fact that I had imported the "firestore" from "firebase/app" instead of "firebase/compat/app". To fix this, I had to import the "firestore" from "firebase/compat/app".
+
+  4. export 'useHistory' (imported as 'useHistory') was not found in 'react-router-dom' - This error was caused by the fact that I had imported the "useHistory" from "react-router-dom" instead of "useNavigate" giving the version of react-router-dom I'm usong . To fix this, I had to import the "useNavigate" from "react-router-dom".
 
 ## Current Error
   

@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import FooterContainer from '../containers/footer'
 import HeaderContainer from '../containers/header'
 import { Form } from '../components'
+import { FirebaseContext } from '../context/firebase'
+import * as ROUTES from '../constants/routes'
+import { useNavigate } from 'react-router-dom'
 
 export default function Signin() {
+  const history = useNavigate()
+  const { firebase } = useContext(FirebaseContext) 
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -13,6 +18,19 @@ export default function Signin() {
 
   const handleSignin = (event) => {
     event.preventDefault()
+
+    // firebase authentication setup here 👇🏼
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(emailAddress, password)
+      .then(() => {
+        // push to the browse page 👇🏼
+      })
+      .catch((error) => {
+        setEmailAddress('')
+        setPassword('')
+        setError(error.message)
+      })
   }
 
   return (
@@ -45,6 +63,11 @@ export default function Signin() {
           <Form.Text>
             New to Netphlix? <Form.Link to="/signup">Sign up now.</Form.Link>
           </Form.Text>
+
+          <Form.TextSmall>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot.  
+            <Form.Link target="_blank" to="https://www.google.com/recaptcha/about/" > Learn more.</Form.Link> 
+          </Form.TextSmall>
         </Form>
       </HeaderContainer>
       
