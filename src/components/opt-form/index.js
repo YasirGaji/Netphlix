@@ -4,7 +4,8 @@ import {
   Input, 
   Button, 
   Break,
-  Text
+  Text,
+  Link
 } from './styles/opt-form'
 
 export default function OptForm({children, ...restProps}) {
@@ -31,4 +32,8 @@ OptForm.Break = function OptFormBreak({...restProps}) {
 
 OptForm.Text = function OptFormText({children, ...restProps}) {
   return <Text {...restProps}>{children}</Text>
+}
+
+OptForm.Link = function OptFormLink({children, ...restProps}) {
+  return <Link {...restProps}>{children}</Link>
 }

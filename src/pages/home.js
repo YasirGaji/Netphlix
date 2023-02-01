@@ -21,7 +21,8 @@ export default function Home() {
             <OptForm.Button>Try it now</OptForm.Button>
             <OptForm.Break />
             <OptForm.Text>
-              Don't have an account? Sign up.
+              Don't have an account? 
+              <OptForm.Link to={"/signup"}> Sign up</OptForm.Link> 
             </OptForm.Text>
           </OptForm>
         </Feature>

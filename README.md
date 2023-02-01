@@ -30,6 +30,7 @@ This is a "static - website" replica of the subscription based streaming platfor
   17. How to feed data to firebase
   18. The trick of keeping initialization files in the context folder
   19. How to use hooks in React
+  20. Route protection, react router auth and redirection
 
 ## Errors I Faced
 
