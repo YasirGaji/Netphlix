@@ -3,7 +3,7 @@ import {
   Background, 
   Container, 
   Logo, 
-  Button 
+  ButtonLink
 } from './styles/header'
 import { Link as ReactRouterLink } from 'react-router-dom'
 
@@ -30,4 +30,8 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
       <Logo {...restProps} />
     </ReactRouterLink>
   )
+}
+
+Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
+  return <ButtonLink {...restProps}>{children}</ButtonLink>;
 }
