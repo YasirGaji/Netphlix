@@ -27,6 +27,7 @@ This is a replica of the subscription based streaming platform service "Netflix"
   14. How to style a reactRouter component using styled components
   15. How to render images for static and dynamic web apps
   16. How to set up a firebase project for a production build and a development build
+  17. How to feed data to firebase
 
 ## Errors I Faced
 
