@@ -24,7 +24,7 @@ export default function Signin() {
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
-        // push to the browse page 👇🏼
+        history.push(ROUTES.BROWSE)
       })
       .catch((error) => {
         setEmailAddress('')
