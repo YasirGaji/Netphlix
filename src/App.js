@@ -13,7 +13,7 @@ import { useAuthListener } from './hooks/useAuth';
 
 
 export default function App() {
-  const user = useAuthListener();
+  const { user } = useAuthListener();
   console.log(user)
 
   return (

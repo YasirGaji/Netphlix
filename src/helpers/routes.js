@@ -7,7 +7,7 @@ export const RedirectRoute = ({user, loggedInPath}) => {
     !user? <Outlet />
       : <Navigate to={{
         pathname: loggedInPath,
-      }} replace />
+      }} replace /> 
   )
 }
 
@@ -21,7 +21,7 @@ export const  ProtectedRoute =({user}) => {
       : <Navigate to={{
         pathname: '/signin',
         state: { from: location },
-      }} replace />
+      }} replace /> 
   )
 }
 

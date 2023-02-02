@@ -26,7 +26,8 @@ export const useAuthListener = () => {
     });
 
     return () => listener();
-  }, [firebase]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return { user };
 
