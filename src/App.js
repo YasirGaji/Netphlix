@@ -7,8 +7,7 @@ import {
   Signup,
   Browse
  } from './pages';
- import { RedirectRoute,  } from './helpers/routes';
-  import ProtectedRoute from './helpers/routes';
+ import  {RedirectRoute, ProtectedRoute} from './helpers/routes';
 import { Layout } from './components';
 
 
@@ -19,11 +18,16 @@ export default function App() {
     <Routes>
       <Route exact path="/" element={<Layout />}>
         <Route exact path="signin" element={<Signin />} />
-        <Route exact path="signup" element={<Signup />} />
+        {/* <Route exact path="signup" element={<Signup />} /> */}
         <Route exact path="/" element={<Home />} /> 
+        {/* <Route exact path="browse" element={<Browse />} /> */}
+        
+        <Route element={<RedirectRoute loggedInPath={ROUTES.BROWSE} user={user} />}>
+          <Route path="signup" element={<Signup />} />
+        </Route> 
 
-        <Route element={<ProtectedRoute />}>
-          <Route exact path="browse" element={<Browse />} />
+        <Route element={<ProtectedRoute user={user} />}>
+          <Route path="browse" element={<Browse />} />
         </Route>
       </Route> 
     </Routes>   
