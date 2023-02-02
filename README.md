@@ -31,6 +31,7 @@ This is a "static - website" replica of the subscription based streaming platfor
   18. The trick of keeping initialization files in the context folder
   19. How to use hooks in React
   20. Route protection, react router auth and redirection
+  21. Learnt about route protection and redirection using react-router-dom V6.
 
 ## Errors I Faced
 
