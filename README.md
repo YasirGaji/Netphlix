@@ -32,6 +32,7 @@ This is a "static - website" replica of the subscription based streaming platfor
   19. How to use hooks in React
   20. Route protection, react router auth and redirection
   21. Learnt about route protection and redirection using react-router-dom V6.
+  22. Advantage of using a seperated custom "useAuth" hook over the "useContext" hook
 
 ## Errors I Faced
 
@@ -45,6 +46,6 @@ This is a "static - website" replica of the subscription based streaming platfor
 
 ## Current Error
   
-  1. Non Yet
+  1. "Firebase: A network AuthError (such as timeout, interrupted connection or unreachable host) has occurred. (auth/network-request-failed)."
 
 ## [View Project](https://netphlix-yasirgaji.vercel.app/)

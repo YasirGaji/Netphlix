@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import * as ROUTES from './constants/routes';
 import { 
   Home,
@@ -7,31 +7,41 @@ import {
   Signup,
   Browse
  } from './pages';
- import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
+ import { RedirectRoute,  } from './helpers/routes';
+  import ProtectedRoute from './helpers/routes';
+import { Layout } from './components';
 
 
 export default function App() {
   const user = { };
 
   return (
-    <Router>
     <Routes>
-      <Route exact path={ROUTES.SIGN_IN}  loggedInPath={ROUTES.BROWSE} user={user} element={
-        <IsUserRedirect>
+      <Route exact path="/" element={<Layout />}>
+        <Route exact path="signin" element={<Signin />} />
+        <Route exact path="signup" element={<Signup />} />
+        <Route exact path="/" element={<Home />} /> 
+
+        <Route element={<ProtectedRoute />}>
+          <Route exact path="browse" element={<Browse />} />
+        </Route>
+      </Route> 
+    </Routes>   
+  );
+}
+
+
+ /* <Route exact path={ROUTES.SIGN_IN}  loggedInPath={ROUTES.BROWSE} user={user} element={
+        <RedirectRoute path={ROUTES.SIGN_IN}  loggedInPath={ROUTES.BROWSE} user={user}>
           <Signin />
-        </IsUserRedirect>
+        </RedirectRoute>
       } />
 
       <Route exact path={ROUTES.SIGN_UP}  loggedInPath={ROUTES.BROWSE} user={user} element={
-        <IsUserRedirect >
+        <RedirectRoute >
           <Signup />
-        </IsUserRedirect>
+        </RedirectRoute>
       } />
-
-      {/* <Route exact path={ROUTES.SIGN_IN} element={<Signin />} /> */}
-      {/* <Route exact path={ROUTES.SIGN_UP} element={<Signup />} /> */}
-      {/* <Route exact path={ROUTES.HOME} element={<Home />} />  */}
-      {/* <Route exact path={ROUTES.BROWSE} element={<Browse />}  */}
 
       <Route exact path={ROUTES.BROWSE} redirectPath={ROUTES.SIGN_IN} user={user} element={
         <ProtectedRoute >
@@ -40,18 +50,10 @@ export default function App() {
       } /> 
 
       <Route exact path={ROUTES.HOME} loggedInPath={ROUTES.BROWSE} user={user} element={
-        <IsUserRedirect >
+        <RedirectRoute >
           <Home />
-        </IsUserRedirect>
-      } /> 
-
-    </Routes>
-    </Router>
-  );
-}
-
-
-
+        </RedirectRoute>
+      } />  */
 
 // <Router>
     //   <Routes>

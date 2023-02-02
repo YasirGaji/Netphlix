@@ -4,7 +4,7 @@ import HeaderContainer from '../containers/header'
 import { Form } from '../components'
 import { FirebaseContext } from '../context/firebase'
 import * as ROUTES from '../constants/routes'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 export default function Signin() {
   const history = useNavigate()
@@ -12,6 +12,7 @@ export default function Signin() {
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const location = useLocation()
 
   // validating form inputs 👇🏼
   const isInvalid = password === '' || emailAddress === ''
