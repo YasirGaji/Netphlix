@@ -2,7 +2,7 @@
 
  [In Progress]
 
-This is a "static - website" replica of the subscription based streaming platform service "Netflix" built on [React](https://reactjs.org/),  [Firebase](https://firebase.com/) as the backend, [fuseJS](https://fusejs.io/), and [Normalize CSS](https://necolas.github.io/normalize.css/)
+This is a "static - website" replica of the subscription based streaming platform service "[Netflix](https://netflix.com)" built on [React](https://reactjs.org/),  [Firebase](https://firebase.com/) as the backend, [fuseJS](https://fusejs.io/), and [Normalize CSS](https://necolas.github.io/normalize.css/)
 
 ## Other tools/technology and libraries used
 

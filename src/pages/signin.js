@@ -62,10 +62,10 @@ export default function SignIn() {
           </Form.Base>
 
           <Form.Text>
-            New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+            New to Netphlix? <Form.Link to="/signup">Sign up now.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. <Form.Link to="https://www.google.com/recaptcha/about/"> Learn more.</Form.Link> 
           </Form.TextSmall>
         </Form>
       </HeaderContainer>

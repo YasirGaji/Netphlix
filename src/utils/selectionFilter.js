@@ -1,4 +1,4 @@
-export const selectionMap = ({ series, films }) => {
+export const selectionFilter= ({ series, films }) => {
   return {
     series: [
       {
