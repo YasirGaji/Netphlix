@@ -9,10 +9,12 @@ import {
  } from './pages';
  import  {RedirectRoute, ProtectedRoute} from './helpers/routes';
 import { Layout } from './components';
+import { useAuthListener } from './hooks/useAuth';
 
 
 export default function App() {
-  const user = { };
+  const user = useAuthListener();
+  console.log(user)
 
   return (
     <Routes>

@@ -4,7 +4,7 @@ import { Form } from '../components';
 import  HeaderContainer  from '../containers/header';
 import  FooterContainer  from '../containers/footer';
 import * as ROUTES from '../constants/routes';
-import useAuth  from '../hooks/useAuth';
+import {useAuth}  from '../hooks/useAuth';
 
 export default function SignIn() {
   const history = useNavigate();
