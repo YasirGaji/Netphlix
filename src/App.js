@@ -24,12 +24,12 @@ export default function App() {
         {/* <Route exact path="signup" element={<Signup />} /> */}
         {/* <Route exact path="browse" element={<Browse />} /> */}
         
-        <Route element={<RedirectRoute loggedInPath={ROUTES.BROWSE} user={user} />}>
+        <Route element={<RedirectRoute loggedInPath={ROUTES.BROWSE} user />}>
           <Route path="signup" element={<Signup />} />
           <Route exact path="signin" element={<Signin />} />
         </Route> 
 
-        <Route element={<ProtectedRoute user={user} />}>
+        <Route element={<ProtectedRoute user />}>
           <Route path="browse" element={<Browse />} />
         </Route>
       </Route> 

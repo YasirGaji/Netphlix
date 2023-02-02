@@ -39,7 +39,7 @@ export default function FooterContainer() {
 
         <Footer.Break />
 
-        <Footer.Text>Netphlix | Built by <Footer.Link target="_blank" href="https://www.yasirgaji.com">Yasir Gaji</Footer.Link>.</Footer.Text>
+        <Footer.Text>Built by <Footer.Link target="_blank" href="https://www.yasirgaji.com">Yasir Gaji</Footer.Link>.</Footer.Text>
       </Footer.Row>
     </Footer>
   )
