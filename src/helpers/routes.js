@@ -31,12 +31,21 @@ export const ProtectedRoute = ({
   user,
   redirectPath = '/signin',
   children,
+  ...rest
 }) => {
-  if (!user) {
-    return <Navigate to={redirectPath} replace />;
+  if (user) {
+    return children;
   }
 
-  return children;
+  if (!user) {
+    return <Navigate to={{
+      pathname: redirectPath,
+      // eslint-disable-next-line no-restricted-globals
+      state: { from: location },
+    }} replace />;
+  }
+
+  return null;
 };
 
 export const IsUserRedirect = ({

@@ -7,7 +7,7 @@ import {
   Signup,
   Browse
  } from './pages';
- import { IsUserRedirect } from './helpers/routes';
+ import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
 
 
 export default function App() {
@@ -16,22 +16,35 @@ export default function App() {
   return (
     <Router>
     <Routes>
-      <Route path={ROUTES.SIGN_IN} element={
-        <IsUserRedirect exact path={ROUTES.SIGN_IN}  loggedInPath={ROUTES.BROWSE} user={user}>
+      <Route exact path={ROUTES.SIGN_IN}  loggedInPath={ROUTES.BROWSE} user={user} element={
+        <IsUserRedirect>
           <Signin />
         </IsUserRedirect>
       } />
 
-      <Route path={ROUTES.SIGN_UP} element={
-        <IsUserRedirect exact path={ROUTES.SIGN_UP}  loggedInPath={ROUTES.BROWSE} user={user}>
+      <Route exact path={ROUTES.SIGN_UP}  loggedInPath={ROUTES.BROWSE} user={user} element={
+        <IsUserRedirect >
           <Signup />
         </IsUserRedirect>
       } />
 
       {/* <Route exact path={ROUTES.SIGN_IN} element={<Signin />} /> */}
       {/* <Route exact path={ROUTES.SIGN_UP} element={<Signup />} /> */}
-      <Route exact path={ROUTES.HOME} element={<Home />} /> 
-      <Route exact path={ROUTES.BROWSE} element={<Browse />} /> 
+      {/* <Route exact path={ROUTES.HOME} element={<Home />} />  */}
+      {/* <Route exact path={ROUTES.BROWSE} element={<Browse />}  */}
+
+      <Route exact path={ROUTES.BROWSE} redirectPath={ROUTES.SIGN_IN} user={user} element={
+        <ProtectedRoute >
+          <Browse />
+        </ProtectedRoute>
+      } /> 
+
+      <Route exact path={ROUTES.HOME} loggedInPath={ROUTES.BROWSE} user={user} element={
+        <IsUserRedirect >
+          <Home />
+        </IsUserRedirect>
+      } /> 
+
     </Routes>
     </Router>
   );
