@@ -38,37 +38,6 @@ export const Title = styled.h1`
   }
 `;
 
-export const List = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-`;
-
-export const User = styled.li`
-  max-width: 200px;
-  max-height: 200px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s;
-  margin: 10px;
-
-
-  &:hover {
-    transform: scale(1.3);
-    z-index: 99;
-  }
-
-  @media (max-width: 1000px) {
-    max-width: 150px;
-    max-height: 150px;
-  }
-
-`;
-
 export const Picture = styled.img`
   width: 100%;
   height: 100%;
@@ -86,6 +55,16 @@ export const Picture = styled.img`
   }
 `;
 
+export const List = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+`;
+
 export const Name = styled.p`
   color: #808080;
   font-size: 16px;
@@ -100,4 +79,40 @@ export const Name = styled.p`
     font-size: 14px;
   }
 `;
+
+export const User = styled.li`
+  max-width: 200px;
+  max-height: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 10px;
+  list-style-type: none;
+
+
+  &:hover {
+    transform: scale(1.3);
+    z-index: 99;
+  }
+
+  @media (max-width: 1000px) {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  &:hover > ${Picture} {
+    border: 3px solid #fff;
+  }
+
+  &:hover > ${Name} {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+`;
+
+
 

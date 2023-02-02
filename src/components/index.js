@@ -7,4 +7,4 @@ export { default as Feature } from './feature';
 export { default as Form } from './form';
 export { default as Layout } from './layout';
 export { default as Profiles } from './profiles';
-
+export { Loading } from './loading';
