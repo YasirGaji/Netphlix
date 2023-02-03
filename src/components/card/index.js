@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from 'react'
-import { useAuth } from '../../hooks/useAuth'
+// import { useAuth } from '../../hooks/useAuth'
 import {
   Container,
   Group,
@@ -23,7 +23,7 @@ export const FeatureContext = createContext()
 export default function Card({ children, ...restProps}) {
   const [showFeature, setShowFeature] = useState(false)
   const [itemFeature, setItemFeature] = useState({})
-  const { user } = useAuth()
+  // const { user } = useAuth()
 
 
   return (
