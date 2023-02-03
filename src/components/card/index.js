@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, createContext, useContext } from 'react'
+import { useAuth } from '../../hooks/useAuth'
 import {
   Container,
   Group,
@@ -17,8 +18,19 @@ import {
   Image,
 } from './styles/card'
 
+export const FeatureContext = createContext()
+
 export default function Card({ children, ...restProps}) {
-  return <Container { ...restProps}>{children}</Container>
+  const [showFeature, setShowFeature] = useState(false)
+  const [itemFeature, setItemFeature] = useState({})
+  const { user } = useAuth()
+
+
+  return (
+    <FeatureContext.Provider value={{ showFeature, setShowFeature, itemFeature, setItemFeature }}>
+    <Container { ...restProps}>{children}</Container>
+    </FeatureContext.Provider>
+  )
 }
 
 Card.Group = function CardGroup({ children, ...restProps}) {
@@ -70,9 +82,16 @@ Card.Entities = function CardEntities({ children, ...restProps}) {
 }
 
 Card.Item = function CardItem({ item, children, ...restProps}) {
+  const { setShowFeature, setItemFeature } = useContext(FeatureContext);
+
   const { genre } = item
   return (
-    <Item { ...restProps}>
+    <Item 
+    onClick={() => {
+      setItemFeature(item)
+      setShowFeature(true)
+    }}
+    { ...restProps}>
       <Image src={`/images/${genre}/${item.slug}/small.jpg`} />
       {children}
     </Item>
