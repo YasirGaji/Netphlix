@@ -35,7 +35,7 @@ This is a "static - website" replica of the subscription based streaming platfor
   22. Advantage of using a seperated custom "useAuth" hook over the "useContext" hook
   23. How to Re-use & Re-style a pre-existing style-component in styled-components
   24. How to write conditionals in styled-components
-  25. How to pass props in styled-components
+  25. How to pass props (including specific css props) in styled-components
 
 ## Errors I Faced
 
