@@ -1,12 +1,21 @@
 import React from "react";
-import { Container, Picture } from "./styles/loading";
+import {  
+  ReleaseBody, 
+  LockBody, 
+  Picture, 
+  Spinner 
+} from "./styles/loading";
 
 
-export const Loading = ({ src, ...restProps }) => {
+export function Loading({ src, ...restProps }) {
   return (
-    <Container {...restProps}>
+    <Spinner>
+    <LockBody />
       <Picture src={`/images/users/${src}.png`} />
-    </Container>
+    </Spinner>
   );
 }
 
+Loading.ReleaseBody = function LoadingReleaseBody() {
+  return <ReleaseBody />;
+}

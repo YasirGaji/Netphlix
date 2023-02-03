@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SelectProfileContainer } from "./profiles";
 import { useAuth } from "../hooks/useAuth";
-import { Loading }  from "../components";
+import  { Loading }  from "../components";
 
 
 export function BrowseContainer({ slides }) {

@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { List } from "../../profiles/styles/profiles";
+// import { List } from "../../profiles/styles/profiles";
 
 export const Container = styled.div`
   display: flex;
