@@ -7,8 +7,7 @@ This is a "static - website" replica of the subscription based streaming platfor
 ## Other tools/technology and libraries used
 
  [Styled Component](https://styled-components.com/) - For styling
- [React Router](https://reactrouter.com/) - For routing
- [React Router Dom V6](https://reactrouter.com/) - For routing
+ [React Router](https://reactrouter.com/) & [React Router Dom V6](https://reactrouter.com/) - For routing
 
 ## What I Learned
 
