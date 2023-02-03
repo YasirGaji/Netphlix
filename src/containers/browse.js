@@ -46,7 +46,7 @@ export function BrowseContainer({ slides }) {
 
             <Header.Profile>
               <Header.Picture src={user.photoURL} />
-
+ 
               <Header.Dropdown>
                 <Header.Group>
                   <Header.Picture src={user.photoURL} />

@@ -43,7 +43,6 @@ export const Frame = styled.div`
 export const Group = styled.div`
   display: flex;
   align-items: center;
-
 `;
 
 export const Logo = styled.img`
@@ -149,6 +148,84 @@ export const Dropdown = styled.div`
   width: 100px;
   top: 32px;
   right: 10px;
+
+  ${Group}:last-of-type ${Link} {
+    cursor: pointer;
+  }
+
+  ${Group} {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    ${Link}, ${Picture} {
+      cursor: default;
+    }
+  }
+
+  button {
+    margin-right: 10px;
+  }
+`;
+
+export const Search = styled.div`
+  display: flex;
+  align-items: center;
+
+  svg {
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const SearchIcon = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+
+  img {
+    filter: brightness(0) invert(1);
+    width: 16px;  
+  }
+  
+`;
+
+export const SearchInput = styled.input`
+  background-color: #44444459;
+  color: white;
+  border: 1px solid white;
+  transition: width 0.5s;
+  height: 30px;
+  font-size: 14px;
+  margin-left: ${({ active }) => (active === true ? "10px" : "0")};
+  padding: ${({ active }) => (active === true ? "0 10px" : "0")};
+  opacity: ${({ active }) => (active === true ? "1" : "0")};
+  width: ${({ active }) => (active === true ? "200px" : "0")};
+
+  &:focus {
+    background-color: white;
+    color: black;
+    outline: none;
+  }
+
+  @media (max-width: 700px) {
+    background-color: #44444459;
+    color: white;
+    border: 1px solid white;
+    transition: width 0.5s;
+    height: 30px;
+    font-size: 14px;
+    margin-left: ${({ active }) => (active === true ? "10px" : "0")};
+    padding: ${({ active }) => (active === true ? "0 10px" : "0")};
+    opacity: ${({ active }) => (active === true ? "1" : "0")};
+    width: ${({ active }) => (active === true ? "200px" : "0")};
+  }
 `;
 
 export const Profile = styled.div`
@@ -169,11 +246,7 @@ export const Profile = styled.div`
 
 `;
 
-export const Search = styled.div``;
 
-export const SearchIcon = styled.button``;
-
-export const SearchInput = styled.input``;
 
 
 
