@@ -9,7 +9,7 @@ import {
 
 export function Loading({ src, ...restProps }) {
   return (
-    <Spinner>
+    <Spinner { ...restProps}>
     <LockBody />
       <Picture src={`/images/users/${src}.png`} />
     </Spinner>
