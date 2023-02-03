@@ -15,6 +15,7 @@ import {
   Picture,
   Profile,
   Dropdown,
+  PlayButton
 } from './styles/header'
 import { Link as ReactRouterLink } from 'react-router-dom'
 
@@ -87,4 +88,8 @@ Header.Picture = function HeaderPicture({ src, ...restProps }) {
 
 Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
   return <Dropdown {...restProps}>{children}</Dropdown>;
+}
+
+Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
+  return <PlayButton {...restProps}>{children}</PlayButton>;
 }

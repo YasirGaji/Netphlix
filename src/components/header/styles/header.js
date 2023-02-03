@@ -246,6 +246,36 @@ export const Profile = styled.div`
 
 `;
 
+export const PlayButton = styled.button`
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+  background-color: #e6e6e6;
+  color: #000;
+  border-width: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 130px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #ff1e1e;
+    color: white;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+`;
+
 
 
 
