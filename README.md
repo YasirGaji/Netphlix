@@ -6,7 +6,7 @@ This is a "static - website" replica of the subscription based streaming platfor
 
 ## Other tools/technology and libraries used
 
- [Styled Component](https://styled-components.com/) - For styling
+ [Styled Component](https://styled-components.com/) - For styling |
  [React Router](https://reactrouter.com/) & [React Router Dom V6](https://reactrouter.com/) - For routing
 
 ## What I Learned
@@ -44,8 +44,10 @@ This is a "static - website" replica of the subscription based streaming platfor
 
   4. "export 'useHistory' (imported as 'useHistory') was not found in 'react-router-dom'" - This error was caused by the fact that I had imported the "useHistory" from "react-router-dom" instead of "useNavigate" giving the version of react-router-dom I'm usong . To fix this, I had to import the "useNavigate" from "react-router-dom".
 
+  5. "Firebase: A network AuthError (such as timeout, interrupted connection or unreachable host) has occurred. (auth/network-request-failed)." - This error was caused by the fact that I had not set up the firebase project for a production build and a development build. To fix this, I had to set up the firebase project for a production build and a development build.
+
 ## Current Error
   
-  1. "Firebase: A network AuthError (such as timeout, interrupted connection or unreachable host) has occurred. (auth/network-request-failed)."
+  1. Non Yet
 
 ## [View Project](https://netphlix-yasirgaji.vercel.app/)
