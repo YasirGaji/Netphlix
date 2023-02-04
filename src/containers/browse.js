@@ -16,7 +16,7 @@ export function BrowseContainer({ slides }) {
   const [profile, setProfile] = useState({});
   const [loading, setLoading] = useState(true);
   const { firebase } = useAuth();
-  const  user  = firebase.auth().currentUser || { };
+  const  user   = firebase.auth().currentUser || { };
   // const { user } = useAuthListener();
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("series");
@@ -118,6 +118,8 @@ export function BrowseContainer({ slides }) {
           </Card>
         ))}
       </Card.Group>
+
+      
     </>
   ) : <SelectProfileContainer user={user} setProfile={setProfile} />;
 }
