@@ -110,10 +110,10 @@ export function BrowseContainer({ slides }) {
               ))}
             </Card.Entities>
             <Card.Feature category={category}>
-              {/* <Player>
+              <Player>
                 <Player.Button />
                 <Player.Video src="/videos/thanks.mp4" />
-              </Player> */}
+              </Player>
             </Card.Feature>
           </Card>
         ))}

@@ -9,3 +9,4 @@ export { default as Layout } from './layout';
 export { default as Profiles } from './profiles';
 export { Loading } from './loading';
 export { default as Card } from './card';
+export { default as Player } from './player';
