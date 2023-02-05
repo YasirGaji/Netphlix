@@ -2,7 +2,7 @@
 
  [In Progress]
 
-This is a "static - website" replica of the subscription based streaming platform service "[Netflix](https://netflix.com)" built on [React](https://reactjs.org/),  [Firebase](https://firebase.com/) as the backend, [fuseJS](https://fusejs.io/), and [Normalize CSS](https://necolas.github.io/normalize.css/)
+This is a "static - website" replica of the subscription based streaming platform service "[Netflix](https://netflix.com)" built on [React](https://reactjs.org/) for the front-end,  [Firebase](https://firebase.com/) as the backend, [fuseJS](https://fusejs.io/) for the life search integration, and [Normalize CSS](https://necolas.github.io/normalize.css/)
 
 ## Other tools/technology and libraries used
 
@@ -37,6 +37,7 @@ This is a "static - website" replica of the subscription based streaming platfor
   24. How to write conditionals in styled-components
   25. How to pass props (including specific css props) in styled-components
   26. How to create and inject portals in React using JS
+  27. How to create a functioning live search component using fuseJS
 
 ## Errors I Faced
 

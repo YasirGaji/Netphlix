@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SelectProfileContainer } from "./profiles";
 import { useAuth } from "../hooks/useAuth";
+import Fuse from "fuse.js";
 import  { 
   Loading,
   Header,
@@ -22,16 +23,34 @@ export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState("series");
   const [slideRows, setSlideRows] = useState([]);
 
+  // Loading function 👇🏼
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
   }, [profile.displayName]);
 
+  // Category function 👇🏼
 
   useEffect(() => {
     setSlideRows(slides[category]);
   }, [slides, category]);
+
+  // Search function 👇🏼
+
+  useEffect(() => {
+    const fuse = new Fuse(slideRows, {
+      keys: ["data.description", "data.title", "data.genre"],
+    });
+
+    const results = fuse.search(searchTerm).map(({ item }) => item);
+
+    if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
+      setSlideRows(results);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchTerm]); 
 
   return profile.displayName ? (
     <>
