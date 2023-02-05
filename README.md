@@ -36,6 +36,7 @@ This is a "static - website" replica of the subscription based streaming platfor
   23. How to Re-use & Re-style a pre-existing style-component in styled-components
   24. How to write conditionals in styled-components
   25. How to pass props (including specific css props) in styled-components
+  26. How to create and inject portals in React using JS
 
 ## Errors I Faced
 
