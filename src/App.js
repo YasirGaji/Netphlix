@@ -21,11 +21,11 @@ export default function App() {
       <Route exact path="/" element={<Layout />}>
       <Route exact path="/" element={<Home />} /> 
         {/* <Route exact path="signin" element={<Signin />} /> */}
-        {/* <Route exact path="signup" element={<Signup />} /> */}
+        <Route exact path="signup" element={<Signup />} />
         {/* <Route exact path="browse" element={<Browse />} /> */}
         
         <Route element={<RedirectRoute loggedInPath={ROUTES.BROWSE} user />}>
-          <Route path="signup" element={<Signup />} />
+          {/* <Route path="signup" element={<Signup />} /> */}
           <Route exact path="signin" element={<Signin />} />
         </Route> 
 
