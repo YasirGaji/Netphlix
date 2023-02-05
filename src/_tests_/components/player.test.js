@@ -1,5 +1,5 @@
 import React from "react";
-import { render, fireEvent, screen } from "@testing-library/react";
+import { render, fireEvent, } from "@testing-library/react";
 import { Player } from "../../components";
 
 describe("<Player />", () => {
@@ -11,13 +11,19 @@ describe("<Player />", () => {
       </Player>
     );
 
+    // eslint-disable-next-line testing-library/prefer-screen-queries
     expect(queryByTestId("player")).toBeFalsy();
+    // eslint-disable-next-line testing-library/prefer-screen-queries
     fireEvent.click(getByText("Play"));
+
+    // eslint-disable-next-line testing-library/prefer-screen-queries, testing-library/prefer-presence-queries
     expect(queryByTestId("player")).toBeTruthy();
-
+    // eslint-disable-next-line testing-library/prefer-screen-queries
     fireEvent.click(queryByTestId("player"));
-    expect(queryByTestId("player")).toBeFalsy();
 
+    // eslint-disable-next-line testing-library/prefer-screen-queries
+    expect(queryByTestId("player")).toBeFalsy();
+    // eslint-disable-next-line testing-library/no-node-access
     expect(container.firstChild).toMatchSnapshot();
   });
 });
