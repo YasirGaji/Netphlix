@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Player /> renders the <Player /> with a thanks video 1`] = `
+<div
+  class="player__Container-sc-7cakm8-0"
+>
+  <button
+    class="player__Button-sc-7cakm8-1 jBHMZG"
+  >
+    Play
+  </button>
+</div>
+`;

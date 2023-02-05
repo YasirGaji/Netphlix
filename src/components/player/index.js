@@ -18,7 +18,7 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
   const { showPlayer, setShowPlayer } = useContext(PlayerContext);
 
   return showPlayer ? ReactDoM.createPortal(
-    <Overlay onClick={() => setShowPlayer(false)} {...restProps}>
+    <Overlay onClick={() => setShowPlayer(false)} {...restProps} data-testid="player">
       <Inner>
         <video id="netphlix-player" controls>
           <source src={src} type="video/mp4" />

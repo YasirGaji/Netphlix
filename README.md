@@ -38,6 +38,7 @@ This is a "static - website" 0.1% replica of the subscription based streaming pl
   25. How to pass props (including specific css props) in styled-components
   26. How to create and inject portals in React using JS
   27. How to create a functioning live search component using fuseJS
+  28. Testing using jest and react-testing-library
 
 ## Errors I Faced
 
