@@ -1,6 +1,6 @@
 # Netphlix
 
- [In Progress]
+[Completed]
 
 This is a "static - website" 0.1% replica of the subscription based streaming platform service "[Netflix](https://netflix.com)" built on [React](https://reactjs.org/) for the front-end,  [Firebase](https://firebase.com/) as the backend, [fuseJS](https://fusejs.io/) for the live search integration, and [Normalize CSS](https://necolas.github.io/normalize.css/)
 
