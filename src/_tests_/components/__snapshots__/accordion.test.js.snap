@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> renders the <Accordion /> with populated data 1`] = `
+<div
+  class="accordion__Container-sc-chm09z-0 dOXMfr"
+>
+  <div
+    class="accordion__Inner-sc-chm09z-2 kRBjCz"
+  >
+    <h1
+      class="accordion__Title-sc-chm09z-3 gUJWrA"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="accordion__Frame-sc-chm09z-1 hdlQuW"
+    >
+      <div
+        class="accordion__Item-sc-chm09z-4 jiYZjE"
+      >
+        <div
+          class="accordion__Header-sc-chm09z-5 dWANDq"
+        >
+          What is Netphlix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="accordion__Item-sc-chm09z-4 jiYZjE"
+      >
+        <div
+          class="accordion__Header-sc-chm09z-5 dWANDq"
+        >
+          How much does Netphlix cost?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="accordion__Item-sc-chm09z-4 jiYZjE"
+      >
+        <div
+          class="accordion__Header-sc-chm09z-5 dWANDq"
+        >
+          Where can I watch?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="accordion__Item-sc-chm09z-4 jiYZjE"
+      >
+        <div
+          class="accordion__Header-sc-chm09z-5 dWANDq"
+        >
+          How do I cancel?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+      <div
+        class="accordion__Item-sc-chm09z-4 jiYZjE"
+      >
+        <div
+          class="accordion__Header-sc-chm09z-5 dWANDq"
+        >
+          What can I watch on Netphlix?
+          <img
+            alt="Open"
+            src="/images/icons/add.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
