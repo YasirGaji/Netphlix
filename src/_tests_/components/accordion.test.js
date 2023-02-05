@@ -33,7 +33,7 @@ describe("<Accordion />", () => {
   });
 
   it("opens and closes the <Accordion /> component", () => {
-    const { container, queryByText } = render(
+    const { queryByText } = render(
       <Accordion>
         <Accordion.Title>Frequently Asked Questions</Accordion.Title>
         <Accordion.Frame>
