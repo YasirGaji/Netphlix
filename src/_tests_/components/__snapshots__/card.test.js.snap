@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> renders the <Card /> with populated data 1`] = `
+<div
+  class="card__Group-sc-1vhzc8k-2 innKtm"
+>
+  <div
+    class="card__Container-sc-1vhzc8k-1 BdCgl"
+  >
+    <p
+      class="card__Title-sc-1vhzc8k-0 bUzBVU"
+    >
+      Documentaries
+    </p>
+    <div
+      class="card__Entities-sc-1vhzc8k-5 dDznZT"
+    >
+      <div
+        class="card__Item-sc-1vhzc8k-8 fpYDAo"
+      >
+        <img
+          class="card__Image-sc-1vhzc8k-7 kiMkc"
+          src="/images/series/documentaries/tiger-king/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-1vhzc8k-6 jUwoxn"
+        >
+          <p
+            class="card__SubTitle-sc-1vhzc8k-3 NUeTI"
+          >
+            Tiger King
+          </p>
+          <p
+            class="card__Text-sc-1vhzc8k-4 eIQlrF"
+          >
+            Tiger King description
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="card__Container-sc-1vhzc8k-1 BdCgl"
+  >
+    <p
+      class="card__Title-sc-1vhzc8k-0 bUzBVU"
+    >
+      Comedies
+    </p>
+    <div
+      class="card__Entities-sc-1vhzc8k-5 dDznZT"
+    >
+      <div
+        class="card__Item-sc-1vhzc8k-8 fpYDAo"
+      >
+        <img
+          class="card__Image-sc-1vhzc8k-7 kiMkc"
+          src="/images/series/comedies/the-office/small.jpg"
+        />
+        <div
+          class="card__Meta-sc-1vhzc8k-6 jUwoxn"
+        >
+          <p
+            class="card__SubTitle-sc-1vhzc8k-3 NUeTI"
+          >
+            The Office
+          </p>
+          <p
+            class="card__Text-sc-1vhzc8k-4 eIQlrF"
+          >
+            The Office description
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

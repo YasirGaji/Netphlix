@@ -1,6 +1,7 @@
+/* eslint-disable testing-library/no-node-access */
 /* eslint-disable testing-library/prefer-screen-queries */
 import React from "react";
-import { render, fireEvent } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { Card, Player } from "../../components";
 // import { cardData } from "../../fixtures/cardData.json";
 
@@ -67,6 +68,13 @@ describe("<Card />", () => {
 
     expect(getByText("Documentaries")).toBeTruthy();
     expect(getByText("Tiger King")).toBeTruthy();
+    expect(getByText("Tiger King description")).toBeTruthy();
+
+    expect(getByText("Comedies")).toBeTruthy();
+    expect(getByText("The Office")).toBeTruthy();
+    expect(getByText("The Office description")).toBeTruthy();
+
+    expect(container.firstChild).toMatchSnapshot();
  
   });
 });
