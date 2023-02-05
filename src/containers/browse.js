@@ -109,7 +109,17 @@ export function BrowseContainer({ slides }) {
             Set in 1981, it follows Arthur Fleck, a failed clown and aspiring stand-up comic whose descent into mental illness and nihilism inspires a violent countercultural revolution against the prosperous in a decaying Gotham City. Robert De Niro, Zazie Beetz and Frances Conroy appear in supporting roles.
           </Header.Text>
 
-          <Header.PlayButton>Play</Header.PlayButton>
+          {/* <Header.PlayButton>
+            Play
+          </Header.PlayButton> */}
+          <br />
+      
+            <Player>
+              <Player.Button />
+              <Player.Video src="/videos/thanks.mp4" />
+            </Player>
+
+
         </Header.Feature>
       </Header>
 
