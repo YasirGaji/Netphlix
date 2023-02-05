@@ -28,11 +28,12 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
     </Overlay>,
 
     document.body
-    
+
   ) : null;
 }
 
 Player.Button = function PlayerButton({ ...restProps }) {
+  // eslint-disable-next-line no-unused-vars
   const { showPlayer, setShowPlayer } = useContext(PlayerContext);
 
   return (
