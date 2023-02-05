@@ -27,6 +27,7 @@
       "<rootDir>/src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/**/*.d.ts",
       "!<rootDir>/src/index.js",
+      "!<rootDir>/src/App.js",
       "!<rootDir>/src/seed.js",
       "!<rootDir>/src/global-styles.js",
       "!<rootDir>/src/components/index.js",
