@@ -2,6 +2,8 @@ import React from "react";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 import { Header, Profiles } from "../components";
+import { Form }  from "../components";
+
 
 
 export function SelectProfileContainer({ user, setProfile }) {
@@ -26,7 +28,11 @@ export function SelectProfileContainer({ user, setProfile }) {
           >
             <Profiles.Picture src={user.photoURL} />
             <Profiles.Name>{user.displayName}</Profiles.Name>
+            <Form.Text>
+            Don't have an account? <Form.Link to="/signup">Sign up now.</Form.Link>
+          </Form.Text>
           </Profiles.User>
+          
         </Profiles.List>
       </Profiles>
 

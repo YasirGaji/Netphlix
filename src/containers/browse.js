@@ -7,7 +7,6 @@ import  {
   Header,
   Card,
   Player,
-  Form,
 }  from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
@@ -56,10 +55,7 @@ export function BrowseContainer({ slides }) {
   return profile.displayName ? (
     <>
     {loading ? ( 
-      <Loading src={user.photoURL} />,
-      <Form.Text>
-        New to Netphlix? <Form.Link to="/signup">Sign up now.</Form.Link>
-      </Form.Text>
+      <Loading src={user.photoURL} />
       ) : ( 
         <Loading.ReleaseBody />
       )} 
