@@ -54,6 +54,6 @@ This is a "static - website" 0.1% replica of the subscription based streaming pl
 
 ## Current Error
   
-  1. Non Yet
+  1. None
 
 ## [View Project](https://netphlix-yasirgaji.vercel.app/)
